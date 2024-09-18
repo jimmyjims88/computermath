@@ -1,0 +1,58 @@
+#변수(변하는수)
+.방정식
+x에 어떤값을 대입하는가에따라 
+참이되기도하고 거짓이 되기도 하는 식
+(꼭 참이 아니어도 그 자체로 방정식이다) 
+2x=4 / x는 2이지만 다른값이면 거짓
+`코드표현 x=Symbol('x')
+`방정식으로 풀기위해 2x-4를 
+ equation이라는 변수 에 대입
+ equation =2*x-4
+ 
+.방정식 코드표현 실습 *20~23
+
+.방정식 연습문제 코드표현 *24
+ 문제:코드
+ 4=x-2:eqation = x-6
+      :eqation =
+	  :eqation = x/2 -8
+
+#연립방정식의 언어적 표현
+연립방정식:2개이상의 미지수가 포함된 방정식
+들의 연산
+ex> 3x + y =2
+     x- 2y=3 
+    ---------
+	x=1,y=-1
+->코드표현 (위의 방정식을 변수에 넣어줌)
+equation1 = 3*x + y - 2
+equation2 =  x - 2*y - 3
+
+.연립방정식 코드표현 실습 *35
+from sympy import symbol.solve3
+x = Symbol('x')
+y = Symbol('y')
+equation1 = 3*x + y - 2
+equation2 =  x - 2*y - 3
+solve((eqation1, eqation2)) 
+//->괄호안에 식이 2개라 괄호로 또 묶어줘야된다
+{x : 1,y : -1}
+.연습문제 2 *38:30
+ x + 2y = 6
+3x -  y =-3
+-----------
+ x=0,y=3
+
+.연립방정식 코드표현 실습2 *40
+from sympy import symbol.solve3
+x = Symbol('x')
+y = Symbol('y')
+equation1 = x + 2*y - 6
+equation2 = 3*x - y + 3
+solve((eqation1, eqation2)) 
+//->괄호안에 식이 2개라 괄호로 또 묶어줘야된다
+{x : 0,y : 3}
+
+.퀴즈 *42
+
+.정리 *44
